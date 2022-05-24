@@ -26,7 +26,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- no highlight
-keymap("n", "<leader>l", ":nohl<cr>", opts)
+keymap("n", "<leader>nl", ":nohl<cr>", opts)
 
 -- save buffer
 keymap("n", "<leader>w", ":w<cr>", opts)
