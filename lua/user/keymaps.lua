@@ -38,16 +38,25 @@ keymap("n", "H", "^", opts)
 -- keymap("n", "<S-h>", "^", opts)
 keymap("n", "L", "$", opts)
 -- keymap("n", "<S-l>", "$", opts)
+keymap("v", "H", "^", opts)
+keymap("v", "L", "$", opts)
 keymap("n", "J", "3j", opts)
 keymap("n", "K", "3k", opts)
 
+-- split
+keymap("n", "sl", ":set splitright<CR>:vsplit<CR>", opts)
+keymap("n", "sj", ":set splitbelow<CR>:split<CR>", opts)
+keymap("n", "sk", ":set nosplitbelow<CR>:split<CR>", opts)
+keymap("n", "sh", ":set nosplitright<CR>:vsplit<CR>", opts)
+
+-- open file explore on sitebar
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize +2<CR>", opts)
-keymap("n", "<C-Down>", ":resize -2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<leader>k", ":resize +2<CR>", opts)
+keymap("n", "<leader>j", ":resize -2<CR>", opts)
+keymap("n", "<leader>h", ":vertical resize -2<CR>", opts)
+keymap("n", "<leader>l", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 -- keymap("n", "<S-l>", ":bnext<CR>", opts)
