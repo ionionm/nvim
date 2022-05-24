@@ -3,7 +3,6 @@
 -- local colorscheme = "onedark"
 -- local colorscheme = "tokyonight"
  local colorscheme = "catppuccin"
--- local colorscheme = "github-nvim-theme"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then 
@@ -15,6 +14,4 @@ if colorscheme == "onedark" then
   require "user.themes.onedark"
 elseif colorscheme == "catppuccin" then 
   require "user.themes.catppuccin"
-elseif colorscheme == "github-nvim-theme" then
-  require "user.themes.github-nvim-theme"
 end
