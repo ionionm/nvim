@@ -47,7 +47,8 @@ return packer.startup(function(use)
 
   -- Color Scheme
   use 'folke/tokyonight.nvim' 
-  use "navarasu/onedark.nvim"
+  -- use "navarasu/onedark.nvim"
+  -- use 'olimorris/onedarkpro.nvim'
   use({
     "catppuccin/nvim",
     as = "catppuccin"
@@ -72,9 +73,44 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
-    -- Telescope
+  -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
+
+  -- Editor enhance
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
+  use "nvim-treesitter/playground"
+
+--  -- Treesittetr
+--  use {
+--    "nvim-treesitter/nvim-treesitter",
+--    run = ":TSUpdate",
+--    commit = "44b7c8100269161e20d585f24bce322f6dcdf8d2",
+--  }
+--  use {
+--    "nvim-treesitter/nvim-treesitter-textobjects",
+--    commit = "c81382328ad47c154261d1528d7c921acad5eae5",
+--  } -- enhance texetobject selection
+--  use "romgrk/nvim-treesitter-context" -- show class/function at the top
+--  use "andymass/vim-matchup"
+
+  -- nvim-tree
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
+  use {
+    "akinsho/bufferline.nvim", -- tab
+    tag = "v1.2.0",
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

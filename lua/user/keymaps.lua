@@ -50,7 +50,9 @@ keymap("n", "sk", ":set nosplitbelow<CR>:split<CR>", opts)
 keymap("n", "sh", ":set nosplitright<CR>:vsplit<CR>", opts)
 
 -- open file explore on sitebar
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- Nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<leader>k", ":resize +2<CR>", opts)

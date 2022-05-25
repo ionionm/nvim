@@ -1,7 +1,12 @@
+local status_ok, onedark = pcall(require, "onedark")
+if not status_ok then
+  return
+end
+
 -- Lua
-require('onedark').setup  {
+onedark.setup  {
     -- Main options --
-    style = 'darker', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+    style = 'deep', -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
     transparent = false,  -- Show/hide background
     term_colors = true, -- Change terminal color as per the selected theme style
     ending_tildes = false, -- Show the end-of-buffer tildes. By default they are hidden
@@ -22,8 +27,8 @@ require('onedark').setup  {
     },
 
     -- Custom Highlights --
-    colors = {}, -- Override default colors
-    highlights = {}, -- Override highlight groups
+    -- colors = {}, -- Override default colors
+    -- highlights = {}, -- Override highlight groups
 
     -- Plugins Config --
     diagnostics = {
@@ -32,3 +37,5 @@ require('onedark').setup  {
         background = true,    -- use background color for virtual text
     },
 }
+
+onedark.load()
