@@ -47,12 +47,13 @@ return packer.startup(function(use)
 
   -- Color Scheme
   use 'folke/tokyonight.nvim'
-  -- use "navarasu/onedark.nvim"
-  -- use 'olimorris/onedarkpro.nvim'
   use({
     "catppuccin/nvim",
     as = "catppuccin"
   })
+  use 'navarasu/onedark.nvim'
+  use 'olimorris/onedarkpro.nvim'
+  use 'tiagovla/tokyodark.nvim'
 
   -- code completion
   -- cmp plugins
@@ -85,6 +86,9 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
 
+  -- terminal toggle
+  use "akinsho/toggleterm.nvim"
+
 
   -- Treesitter
   use {
@@ -94,18 +98,18 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
 
---  -- Treesittetr
---  use {
---    "nvim-treesitter/nvim-treesitter",
---    run = ":TSUpdate",
---    commit = "44b7c8100269161e20d585f24bce322f6dcdf8d2",
---  }
---  use {
---    "nvim-treesitter/nvim-treesitter-textobjects",
---    commit = "c81382328ad47c154261d1528d7c921acad5eae5",
---  } -- enhance texetobject selection
---  use "romgrk/nvim-treesitter-context" -- show class/function at the top
---  use "andymass/vim-matchup"
+  --  -- Treesittetr
+  --  use {
+  --    "nvim-treesitter/nvim-treesitter",
+  --    run = ":TSUpdate",
+  --    commit = "44b7c8100269161e20d585f24bce322f6dcdf8d2",
+  --  }
+  --  use {
+  --    "nvim-treesitter/nvim-treesitter-textobjects",
+  --    commit = "c81382328ad47c154261d1528d7c921acad5eae5",
+  --  } -- enhance texetobject selection
+  --  use "romgrk/nvim-treesitter-context" -- show class/function at the top
+  --  use "andymass/vim-matchup"
 
   -- nvim-tree bufferline
   use 'kyazdani42/nvim-web-devicons'
@@ -116,11 +120,23 @@ return packer.startup(function(use)
   }
   use "moll/vim-bbye"
 
+  -- autosave
+  use "Pocco81/AutoSave.nvim"
+  use "djoshea/vim-autoread"
+
   -- lualine
   use "nvim-lualine/lualine.nvim" -- status line
 
   -- starterup
   use "goolord/alpha-nvim" -- welcome page
+
+  -- indentline
+  use "lukas-reineke/indent-blankline.nvim" -- indent blankline
+
+  -- outline
+  -- use "liuchengxu/vista.vim"     -- outline
+  use "simrat39/symbols-outline.nvim" -- outline
+  -- use "stevearc/aerial.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

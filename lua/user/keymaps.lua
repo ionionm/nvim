@@ -94,6 +94,7 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<Space>f", ":NvimTreeFindFile<cr>", opts)
 
 -- Bufferline
 -- keymap("n", "<C-n>", "<cmd>BufferLineCyclePrev<cr>", opts)
@@ -101,3 +102,5 @@ keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<Space>m", "<cmd>BufferLineCyclePrev<cr>", opts)
 keymap("n", "<Space>n", "<cmd>BufferLineCycleNext<cr>", opts)
 keymap("n", "<Space>w", "<cmd>Bdelete<cr>", opts)
+
+keymap("n", "<leader>s", ":SymbolsOutline<cr>", opts)
