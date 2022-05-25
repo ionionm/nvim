@@ -82,6 +82,9 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- Easily comment stuff
   use 'JoosepAlviste/nvim-ts-context-commentstring'
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
+
 
   -- Treesitter
   use {
