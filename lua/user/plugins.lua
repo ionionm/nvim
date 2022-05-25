@@ -116,6 +116,9 @@ return packer.startup(function(use)
   }
   use "moll/vim-bbye"
 
+  -- lualine
+  use "nvim-lualine/lualine.nvim" -- status line
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
