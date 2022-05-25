@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -153,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-ts-rainbow"] = {
     loaded = true,
@@ -198,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-bbye"] = {
+    loaded = true,
+    path = "/Users/lxw/.local/share/nvim/site/pack/packer/start/vim-bbye",
+    url = "https://github.com/moll/vim-bbye"
   }
 }
 

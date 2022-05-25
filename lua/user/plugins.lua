@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
 
   -- Color Scheme
-  use 'folke/tokyonight.nvim' 
+  use 'folke/tokyonight.nvim'
   -- use "navarasu/onedark.nvim"
   -- use 'olimorris/onedarkpro.nvim'
   use({
@@ -107,13 +107,14 @@ return packer.startup(function(use)
 --  use "romgrk/nvim-treesitter-context" -- show class/function at the top
 --  use "andymass/vim-matchup"
 
-  -- nvim-tree
+  -- nvim-tree bufferline
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use {
     "akinsho/bufferline.nvim", -- tab
     tag = "v1.2.0",
   }
+  use "moll/vim-bbye"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
